@@ -22,9 +22,11 @@ export class ResetPasswordScreen extends BaseScreen {
                 <TouchableOpacity style={ { flex : 0.8, paddingTop : 10 } } onPress={ () => this.__go('ForgetPassword') }>
                     <Text style={ { color : '#b0b0b0', fontSize : 17, fontFamily: 'OpenSans-Bold', } }>Forget Password</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={ {  flex : 0.2, backgroundColor : '#00cc99',justifyContent : 'center', alignItems : 'center', height : 50, borderRadius : 50, } } onPress={ () => this.__back() }>
-                    <Icon name="arrow-right" color={ '#fff' } size={ 30 } ></Icon>
-                </TouchableOpacity>
+                <View>
+                    <TouchableOpacity style={ {  flex : 0.2, backgroundColor : '#00cc99',justifyContent : 'center', alignItems : 'center', height : 50, borderRadius : 50, } } onPress={ () => this.__back() }>
+                        <Icon name="arrow-right" color={ '#fff' } size={ 30 } ></Icon>
+                    </TouchableOpacity>
+                </View>
             </View>
         )
     }

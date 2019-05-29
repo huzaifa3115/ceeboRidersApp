@@ -27,7 +27,7 @@ export class MainScreen extends BaseScreen {
                         </View>
                         <View style={ { justifyContent : 'center', paddingHorizontal : 40, } }>
                             <View>
-                                <Text style={ { color : '#191919', fontSize : 25, fontWeight : 'bold', fontFamily: 'OpenSans-Regular',  } }>Deliver with Postmates and earn what u want and when u want.</Text>
+                                <Text style={ { color : '#191919', fontSize : 25, fontWeight : 'bold', fontFamily: 'OpenSans-Regular',  } }>Deliver with Ceebo and earn what u want and when u want.</Text>
                             </View>
                             
                             <View style={ { paddingVertical : 20 } }>
@@ -40,7 +40,7 @@ export class MainScreen extends BaseScreen {
 				</View>
                 <View style={ { justifyContent : 'center', paddingHorizontal : 40,paddingBottom : 30 } }>
                     <View>
-                        <Text style={ { color : '#b0b0b0', fontSize : 17, fontFamily: 'OpenSans-Bold', } }>Already have Postmates account?</Text>
+                        <Text style={ { color : '#b0b0b0', fontSize : 17, fontFamily: 'OpenSans-Bold', } }>Already have Ceebo account?</Text>
                     </View>
                     <TouchableOpacity style={ { flexDirection : 'row', paddingTop : 5 } } onPress={ () => this.__go('Login') }>
                         <View>
