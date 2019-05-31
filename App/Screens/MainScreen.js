@@ -39,9 +39,9 @@ export class MainScreen extends BaseScreen {
                     </View>
 				</View>
                 <View style={ { justifyContent : 'center', paddingHorizontal : 40,paddingBottom : 30 } }>
-                    <View>
+                    <TouchableOpacity onPress={() => this.navigation.navigate('DrawerOpen')}>
                         <Text style={ { color : '#b0b0b0', fontSize : 17, fontFamily: 'OpenSans-Bold', } }>Already have Ceebo account?</Text>
-                    </View>
+                    </TouchableOpacity>
                     <TouchableOpacity style={ { flexDirection : 'row', paddingTop : 5 } } onPress={ () => this.__go('Login') }>
                         <View>
                             <Icon name="user-circle" color={ '#00cc99' } size={ 20 } style={ { marginTop : 3 } } ></Icon>
