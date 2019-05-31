@@ -22,7 +22,7 @@ export class ProfileScreen extends BaseScreen {
     render() {
         return (
             <View style={{ backgroundColor: '#FBF9FC', flex: 1 }}>
-                <View style={{ backgroundColor: '#00cc99', height: 150, justifyContent: 'center', alignItems: 'flex-start', }}>
+                <View style={{ backgroundColor: '#00ccbb', height: 150, justifyContent: 'center', alignItems: 'flex-start', }}>
                     <View style={{ paddingLeft: 15 }}>
                         <View>
                             <TouchableOpacity>
@@ -44,13 +44,13 @@ export class ProfileScreen extends BaseScreen {
                                 <Text style={{ color: '#000', fontSize: 18 }} >{'Jamie Smith'}</Text>
                             </View>
                             <View style={{ marginTop: 5 }}>
-                                <Text style={{ color: '#000', fontSize: 11 }} >{'jamiesmith@hotmail.co.uk'}</Text>
-                                <Text style={{ color: '#000', fontSize: 11 }} >{'000 000 000 000'}</Text>
+                                <Text style={{ color: '#cacccb', fontSize: 11 }} >{'jamiesmith@hotmail.co.uk'}</Text>
+                                <Text style={{ color: '#cacccb', fontSize: 11 }} >{'000 000 000 000'}</Text>
                             </View>
                         </View>
                     </View>
                     <View style={{ paddingVertical: 10, paddingHorizontal: 15, }}>
-                        <Text style={{ color: '#00cc99', fontSize: 13 }} >{'Edit details'}</Text>
+                        <Text style={{ color: '#00ccbb', fontSize: 13 }} >{'Edit details'}</Text>
                     </View>
                 </View>
                 <View style={{ backgroundColor: '#fff', marginTop: 20 }}>
@@ -60,13 +60,13 @@ export class ProfileScreen extends BaseScreen {
                                 <Text style={{ color: '#000', fontSize: 18 }} >{'Scooter'}</Text>
                             </View>
                             <View style={{ marginTop: 5 }}>
-                                <Text style={{ color: '#000', fontSize: 11 }} >{'RE12 3AA'}</Text>
-                                <Text style={{ color: '#000', fontSize: 11 }} >{'Zego #1234567'}</Text>
+                                <Text style={{ color: '#cacccb', fontSize: 11 }} >{'RE12 3AA'}</Text>
+                                <Text style={{ color: '#cacccb', fontSize: 11 }} >{'Zego #1234567'}</Text>
                             </View>
                         </View>
                     </View>
                     <View style={{ paddingVertical: 10, paddingHorizontal: 15, }}>
-                        <Text style={{ color: '#00cc99', fontSize: 13 }} >{'View vehicle details'}</Text>
+                        <Text style={{ color: '#00ccbb', fontSize: 13 }} >{'View vehicle details'}</Text>
                     </View>
                 </View>
             </View>

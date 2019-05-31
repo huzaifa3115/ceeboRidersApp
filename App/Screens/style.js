@@ -54,17 +54,17 @@ module.exports = {
         btn : {
             borderWidth : 2,
             height : 50,
-            backgroundColor : '#00cc99'
+            backgroundColor : '#00ccbb'
         }
     },
     button : {
-        backgroundColor: '#00cc99',
+        backgroundColor: '#00ccbb',
 		borderRadius: 25,
 		padding: 8,
 		alignItems: 'center',
 		justifyContent: 'center',
         minWidth: '80%',
         marginVertical : 10,
-        borderColor : '#00cc99',
+        borderColor : '#00ccbb',
     },
 };

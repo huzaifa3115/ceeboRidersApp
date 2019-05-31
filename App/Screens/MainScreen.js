@@ -31,7 +31,7 @@ export class MainScreen extends BaseScreen {
                             </View>
                             
                             <View style={ { paddingVertical : 20 } }>
-                                <TouchableOpacity style={ { backgroundColor : '#00cc99', justifyContent : 'center', alignItems : 'center', height : 60, borderRadius : 50 } }>
+                                <TouchableOpacity style={ { backgroundColor : '#00ccbb', justifyContent : 'center', alignItems : 'center', height : 60, borderRadius : 50 } }>
                                     <Text style={ { color : '#fff', fontSize : 20, fontWeight : 'bold' } }>{'Create Account'}</Text>
                                 </TouchableOpacity>
                             </View>
@@ -44,10 +44,10 @@ export class MainScreen extends BaseScreen {
                     </TouchableOpacity>
                     <TouchableOpacity style={ { flexDirection : 'row', paddingTop : 5 } } onPress={ () => this.__go('Login') }>
                         <View>
-                            <Icon name="user-circle" color={ '#00cc99' } size={ 20 } style={ { marginTop : 3 } } ></Icon>
+                            <Icon name="user-circle" color={ '#00ccbb' } size={ 20 } style={ { marginTop : 3 } } ></Icon>
                         </View>
                         <View style={ { paddingHorizontal : 8 } }>
-                            <Text style={ { fontFamily: 'OpenSans-Bold', color : '#00cc99',fontSize : 17 } }>Sign In</Text>
+                            <Text style={ { fontFamily: 'OpenSans-Bold', color : '#00ccbb',fontSize : 17 } }>Sign In</Text>
                         </View>
                     </TouchableOpacity>
                 </View>

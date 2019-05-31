@@ -15,6 +15,7 @@ import { LoginScreen } from './App/Screens/LoginScreen';
 import { ResetPasswordScreen } from './App/Screens/ResetPasswordScreen';
 import { OrderDetailsScreen } from './App/Screens/OrderDetailsScreen';
 import { ProfileScreen } from './App/Screens/ProfileScreen';
+import { AccountDetailScreen } from './App/Screens/AccountDetailScreen';
 // importing screens
 
 import Icon from "react-native-vector-icons/Feather";
@@ -30,7 +31,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const MainNavigator = createStackNavigator({
   Main: { 
-    screen : MainScreen,
+    screen : AccountDetailScreen,
     headerMode: 'float',
       navigationOptions: {
         header: null
@@ -45,6 +46,13 @@ const MainNavigator = createStackNavigator({
   },
   ForgetPassword: { 
     screen : ResetPasswordScreen,
+    headerMode: 'float',
+      navigationOptions: {
+        header: null
+    }
+  },
+  AccountDetailScreen: { 
+    screen : AccountDetailScreen,
     headerMode: 'float',
       navigationOptions: {
         header: null
@@ -101,17 +109,17 @@ class CustomDrawer extends Component {
 						<View style={{ paddingTop : 30, flexDirection : 'row' , flex : 1 }}>
 							<View style={{ flex : 0.9}}>
 								<Text style={{ fontFamily: 'OpenSans-Bold', fontSize : 18, color : '#000' }}>{'Jamie Smith'}</Text>
-								<Text style={{ fontFamily: 'OpenSans-Regular', fontSize : 15, color : '#cccecd' }}>{'Rider ID #12345'}</Text>
+								<Text style={{ fontFamily: 'OpenSans-Regular', fontSize : 15, color : '#cacccb' }}>{'Rider ID #12345'}</Text>
 							</View>
 							<View style={{ flex : 0.1 }}>
-								<Icon name={'chevron-right'} size={28} color={'#00cc99'}></Icon>
+								<Icon name={'chevron-right'} size={28} color={'#00ccbb'}></Icon>
 							</View>
 						</View>
 					</View> 
 					<View style={ { paddingHorizontal: 10 } }>
 						<View style={ { flexDirection : 'row', paddingVertical : 15 } }>
 							<View style={ { paddingHorizontal : 5 } }>
-								<Icon name={'settings'} size={25} color={'#00cc99'}></Icon>
+								<Icon name={'settings'} size={25} color={'#00ccbb'}></Icon>
 							</View>
 							<TouchableOpacity>
 								<Text style={{ color : '#000', fontFamily : 'OpenSans-Regular', fontSize : 16 }}>
@@ -121,7 +129,7 @@ class CustomDrawer extends Component {
 						</View>
 						<View style={ { flexDirection : 'row', paddingVertical : 15 } }>
 							<View style={ { paddingHorizontal : 5 } }>
-								<Icon name={'settings'} size={25} color={'#00cc99'}></Icon>
+								<Icon name={'settings'} size={25} color={'#00ccbb'}></Icon>
 							</View>
 							<TouchableOpacity>
 								<Text style={{ color : '#000', fontFamily : 'OpenSans-Regular', fontSize : 16 }}>
@@ -131,7 +139,7 @@ class CustomDrawer extends Component {
 						</View>
 						<View style={ { flexDirection : 'row', paddingVertical : 15 } }>
 							<View style={ { paddingHorizontal : 5 } }>
-								<Icon name={'settings'} size={25} color={'#00cc99'}></Icon>
+								<Icon name={'settings'} size={25} color={'#00ccbb'}></Icon>
 							</View>
 							<TouchableOpacity>
 								<Text style={{ color : '#000', fontFamily : 'OpenSans-Regular', fontSize : 16 }}>
@@ -144,7 +152,7 @@ class CustomDrawer extends Component {
 				<View style={ { paddingHorizontal : 10, paddingVertical : 15 } }>
 					<Text style={{ fontFamily: 'OpenSans-Regular', fontSize : 14, color : '#cccecd' }}>{'Version 8.0'}</Text>
 					<TouchableOpacity>
-						<Text style={{ fontFamily: 'OpenSans-Regular', fontSize : 18, color : '#00cc99' }}>{'Send Feedback'}</Text>
+						<Text style={{ fontFamily: 'OpenSans-Regular', fontSize : 18, color : '#00ccbb' }}>{'Send Feedback'}</Text>
 					</TouchableOpacity>
 				</View>
 			</View>
