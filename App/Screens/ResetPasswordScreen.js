@@ -35,7 +35,7 @@ export class ResetPasswordScreen extends BaseScreen {
         const PageLoader = (props) => this.__pageFooter();
 
 		return (
-            <Wrapper footer={<PageLoader /> }>
+            <Wrapper>
                 {/* header */}
                 <Header>
                     <View style={ styles.header.left }>

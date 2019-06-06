@@ -67,4 +67,9 @@ module.exports = {
         marginVertical : 10,
         borderColor : '#00ccbb',
     },
+
+    menuItems : {
+        flexDirection : 'row', 
+        paddingVertical : 15
+    }
 };

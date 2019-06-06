@@ -19,7 +19,7 @@ export class Header extends React.Component {
 	render() {
 		let style = this.props.style;
 		return (
-			<View style={[inlineStyles.header, style ? style : { backgroundColor:'#fff' }]}>
+			<View style={[inlineStyles.header, style ? style : { backgroundColor:'#f5f5f7' }]}>
 				{this.props.children}
 			</View>
 		);
@@ -40,7 +40,7 @@ export class Wrapper extends React.Component {
 	render() {
 		return (
 			<View style={{flex: 1, zIndex: 99,}}>
-				<ScrollView style={{ backgroundColor: '#ffffff', flex: 1}} refreshControl={this.props.refreshControl}>
+				<ScrollView style={{ backgroundColor: '#f5f5f7', flex: 1}} refreshControl={this.props.refreshControl}>
 					{this.props.children}
 				</ScrollView>
 				{this.props.footer}

@@ -8,6 +8,8 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View,ScrollView,ListItem,List} from 'react-native';
+import { StackActions, NavigationActions } from 'react-navigation';
+
 
 // importing screens
 import { MainScreen } from './App/Screens/MainScreen';
@@ -16,6 +18,7 @@ import { ResetPasswordScreen } from './App/Screens/ResetPasswordScreen';
 import { OrderDetailsScreen } from './App/Screens/OrderDetailsScreen';
 import { ProfileScreen } from './App/Screens/ProfileScreen';
 import { AccountDetailScreen } from './App/Screens/AccountDetailScreen';
+import { OrderScreen } from './App/Screens/OrderScreen';
 // importing screens
 
 import Icon from "react-native-vector-icons/Feather";
@@ -30,34 +33,55 @@ import {
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const MainNavigator = createStackNavigator({
-  Main: { 
-    screen : AccountDetailScreen,
-    headerMode: 'float',
-      navigationOptions: {
-        header: null
-    }
-  },
-  Login: { 
-    screen : LoginScreen,
-    headerMode: 'float',
-      navigationOptions: {
-        header: null
-    }
-  },
-  ForgetPassword: { 
-    screen : ResetPasswordScreen,
-    headerMode: 'float',
-      navigationOptions: {
-        header: null
-    }
-  },
-  AccountDetailScreen: { 
-    screen : AccountDetailScreen,
-    headerMode: 'float',
-      navigationOptions: {
-        header: null
-    }
-  },
+	Main: {
+		screen: MainScreen,
+		headerMode: 'float',
+		navigationOptions: {
+			header: null
+		}
+	},
+	Login: {
+		screen: LoginScreen,
+		headerMode: 'float',
+		navigationOptions: {
+			header: null
+		}
+	},
+	ForgetPassword: {
+		screen: ResetPasswordScreen,
+		headerMode: 'float',
+		navigationOptions: {
+			header: null
+		}
+	},
+	AccountDetailScreen: {
+		screen: AccountDetailScreen,
+		headerMode: 'float',
+		navigationOptions: {
+			header: null
+		}
+	},
+	OrderDetailsScreen: {
+		screen: OrderDetailsScreen,
+		headerMode: 'float',
+		navigationOptions: {
+			header: null
+		}
+	},
+	OrderScreen: {
+		screen: OrderScreen,
+		headerMode: 'float',
+		navigationOptions: {
+			header: null
+		}
+	},
+	ProfileScreen: {
+		screen: ProfileScreen,
+		headerMode: 'float',
+		navigationOptions: {
+			header: null
+		}
+	},
 });
 
 class CustomDrawer extends Component {
@@ -97,7 +121,15 @@ class CustomDrawer extends Component {
     //     try {
     //         LoginManager.logOut();
     //     } catch(e) {}
-    // }
+	// }
+	
+	__go(to, params = {}) {
+		const pushAction = StackActions.push({
+			routeName: to,
+			params: params 
+		  });
+		  this.props.navigation.dispatch(pushAction);
+    }
 
     render() {
 
@@ -117,33 +149,53 @@ class CustomDrawer extends Component {
 						</View>
 					</View> 
 					<View style={ { paddingHorizontal: 10 } }>
-						<View style={ { flexDirection : 'row', paddingVertical : 15 } }>
+						<View style={ { flexDirection : 'row', paddingVertical : 20 } }>
 							<View style={ { paddingHorizontal : 5 } }>
-								<Icon name={'settings'} size={25} color={'#00ccbb'}></Icon>
+								<Icon name={'home'} size={25} color={'#00ccbb'}></Icon>
 							</View>
-							<TouchableOpacity>
+							<TouchableOpacity onPress={ () => this.__go('Main') }>
 								<Text style={{ color : '#000', fontFamily : 'OpenSans-Regular', fontSize : 16 }}>
-									{'Profile Screen'}
+									{'Home'}
 								</Text>
 							</TouchableOpacity>
 						</View>
-						<View style={ { flexDirection : 'row', paddingVertical : 15 } }>
+						<View style={ { flexDirection : 'row', paddingVertical : 20 } }>
 							<View style={ { paddingHorizontal : 5 } }>
-								<Icon name={'settings'} size={25} color={'#00ccbb'}></Icon>
+								<Icon name={'shopping-bag'} size={25} color={'#00ccbb'}></Icon>
 							</View>
-							<TouchableOpacity>
+							<TouchableOpacity onPress={ () => this.__go('OrderScreen') }>
 								<Text style={{ color : '#000', fontFamily : 'OpenSans-Regular', fontSize : 16 }}>
-									{'Order Detail Screen'}
+									{'Orders'}
 								</Text>
 							</TouchableOpacity>
 						</View>
-						<View style={ { flexDirection : 'row', paddingVertical : 15 } }>
+						<View style={ { flexDirection : 'row', paddingVertical : 20 } }>
 							<View style={ { paddingHorizontal : 5 } }>
 								<Icon name={'settings'} size={25} color={'#00ccbb'}></Icon>
 							</View>
-							<TouchableOpacity>
+							<TouchableOpacity onPress={ () => this.__go('AccountDetailScreen') }>
 								<Text style={{ color : '#000', fontFamily : 'OpenSans-Regular', fontSize : 16 }}>
-									{'Login Screen'}
+									{'Settings'}
+								</Text>
+							</TouchableOpacity>
+						</View>
+						<View style={ { flexDirection : 'row', paddingVertical : 20 } }>
+							<View style={ { paddingHorizontal : 5 } }>
+								<Icon name={'user'} size={25} color={'#00ccbb'}></Icon>
+							</View>
+							<TouchableOpacity onPress={ () => this.__go('ProfileScreen') }>
+								<Text style={{ color : '#000', fontFamily : 'OpenSans-Regular', fontSize : 16 }}>
+									{'Profile'}
+								</Text>
+							</TouchableOpacity>
+						</View>
+						<View style={ { flexDirection : 'row', paddingVertical : 20 } }>
+							<View style={ { paddingHorizontal : 5 } }>
+								<Icon name={'log-out'} size={25} color={'red'}></Icon>
+							</View>
+							<TouchableOpacity>
+								<Text style={{ color : 'red', fontFamily : 'OpenSans-Bold', fontSize : 16 }}>
+									{'Signout'}
 								</Text>
 							</TouchableOpacity>
 						</View>

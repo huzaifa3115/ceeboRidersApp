@@ -22,7 +22,7 @@ export class AccountDetailScreen extends BaseScreen {
 
     render() {
         return(
-            <Wrapper style={{ backgroundColor: '#FBF9FC' }}>
+            <Wrapper style={{ backgroundColor: '#f5f5f7' }}>
                 {/* header */}
                 <Header style={{ backgroundColor : '#00ccbb' }}>
                     <View style={ styles.header.left }>
@@ -36,7 +36,7 @@ export class AccountDetailScreen extends BaseScreen {
                 </Header>
                 {/* header */}
                 <View style={{ backgroundColor: '#fff', }}>
-                    <View style={{ paddingTop: 20, paddingHorizontal: 15 }}>
+                    <View style={{ paddingTop: 20, paddingHorizontal: 15,paddingVertical: 15 }}>
                         <View style={{ alignItems: 'flex-start', borderBottomColor: 'grey', }}>
                             <View>
                                 <Text style={{ color: '#cacccb', fontSize: 13 }} >{'Phone Number'}</Text>
@@ -48,7 +48,7 @@ export class AccountDetailScreen extends BaseScreen {
                     </View>
                 </View>
                 <View style={{ backgroundColor: '#fff',marginTop: 15 }}>
-                    <View style={{ paddingTop: 20, paddingHorizontal: 15 }}>
+                    <View style={{ paddingTop: 20, paddingHorizontal: 15,paddingVertical: 15 }}>
                         <View style={{ alignItems: 'flex-start', borderBottomColor: 'grey', }}>
                             <View>
                                 <Text style={{ color: '#cacccb', fontSize: 13 }} >{'Email'}</Text>
