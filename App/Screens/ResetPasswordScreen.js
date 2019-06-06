@@ -23,7 +23,7 @@ export class ResetPasswordScreen extends BaseScreen {
                     <Text style={ { color : '#b0b0b0', fontSize : 17, fontFamily: 'OpenSans-Bold', } }>Forget Password</Text>
                 </TouchableOpacity>
                 <View>
-                    <TouchableOpacity style={ {  flex : 0.2, backgroundColor : '#00cc99',justifyContent : 'center', alignItems : 'center', height : 50, borderRadius : 50, } } onPress={ () => this.__back() }>
+                    <TouchableOpacity style={ {  flex : 0.2, backgroundColor : '#00ccbb',justifyContent : 'center', alignItems : 'center', height : 50, borderRadius : 50, } } onPress={ () => this.__back() }>
                         <Icon name="arrow-right" color={ '#fff' } size={ 30 } ></Icon>
                     </TouchableOpacity>
                 </View>
@@ -35,7 +35,7 @@ export class ResetPasswordScreen extends BaseScreen {
         const PageLoader = (props) => this.__pageFooter();
 
 		return (
-            <Wrapper footer={<PageLoader /> }>
+            <Wrapper>
                 {/* header */}
                 <Header>
                     <View style={ styles.header.left }>
