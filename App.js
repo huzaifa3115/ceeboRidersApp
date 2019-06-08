@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View,ScrollView,ListItem,List} from 'react-native';
+import {Platform, StyleSheet, Text, View,ScrollView,ListItem,Alert} from 'react-native';
 import { StackActions, NavigationActions } from 'react-navigation';
 
 
@@ -19,6 +19,9 @@ import { OrderDetailsScreen } from './App/Screens/OrderDetailsScreen';
 import { ProfileScreen } from './App/Screens/ProfileScreen';
 import { AccountDetailScreen } from './App/Screens/AccountDetailScreen';
 import { OrderScreen } from './App/Screens/OrderScreen';
+import { EarningsScreen } from './App/Screens/EarningsScreen';
+import styles from './App/Screens/style';
+
 // importing screens
 
 import Icon from "react-native-vector-icons/Feather";
@@ -31,9 +34,30 @@ import {
 	createAppContainer
 } from 'react-navigation';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import AsyncStorage from '@react-native-community/async-storage';
+
+
+global.userData = {};
+global.currentLat = false;
+global.currentLng = false;
+global.isUserLoggedIn = false;
 
 const MainNavigator = createStackNavigator({
 	Main: {
+		screen: EarningsScreen,
+		headerMode: 'float',
+		navigationOptions: {
+			header: null
+		}
+	},
+	Earning: {
+		screen: EarningsScreen,
+		headerMode: 'float',
+		navigationOptions: {
+			header: null
+		}
+	},
+	CreateAccount: {
 		screen: MainScreen,
 		headerMode: 'float',
 		navigationOptions: {
@@ -84,58 +108,56 @@ const MainNavigator = createStackNavigator({
 	},
 });
 
+
+
+
 class CustomDrawer extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            isUserLoggedIn: false
-        }
+			isUserLoggedIn: false,
+			hideNavigation : true,
+		}
+		global.drawerComponent = this;
+	}
+	
+	__goAndReset(routeName, params = {}) {
+		const resetAction = StackActions.reset({
+			index: 0,
+			actions: [NavigationActions.navigate({ routeName: routeName, params })],
+		  });
+		this.props.navigation.dispatch(resetAction);
+	}
+    
+    __logoutConfirm() {
+        Alert.alert('Confirm', 'Are you sure you want to log out?', [
+            {text: 'Cancel', style: 'cancel'},
+            {text: 'Logout', onPress: () => this.__logout() },
+        ]);
     }
     
-    // reload() {
-    //     var that = this;
-    //     AsyncStorage.getItem('userdata', (err, result) => {
-    //         if(result) {
-    //             that.setState({
-    //                 isUserLoggedIn: true
-    //             })
-    //         }
-    //     });
-    // }
-    
-    // logoutConfirm() {
-    //     Alert.alert('Confirm', 'Are you sure you want to log out?', [
-    //         {text: 'Cancel', style: 'cancel'},
-    //         {text: 'Logout', onPress: () => this.logout() },
-    //     ]);
-    // }
-    
-    // logout() {
-    //     AsyncStorage.setItem('userdata', "");
-    //     AsyncStorage.setItem('cart', "");
-    //     AsyncStorage.setItem('sessionId', "");
-    //     this.setState({
-    //         isUserLoggedIn: false 
-    //     });
-    //     try {
-    //         LoginManager.logOut();
-    //     } catch(e) {}
-	// }
-	
 	__go(to, params = {}) {
 		const pushAction = StackActions.push({
 			routeName: to,
 			params: params 
 		  });
 		  this.props.navigation.dispatch(pushAction);
-    }
+	}
+	
+	__logout() {
+		AsyncStorage.clear();
+		global.isUserLoggedIn = false;
+		global.userData = {};
+		
+		this.__goAndReset('Login');
+	}
 
     render() {
 
 		
         return (
-			<View style={{flex: 1, zIndex: 99,}}>
+			<View style={ { flex: 1, zIndex: 99, } }>
 				<ScrollView style={{ flex : 1 }}>
 					<View style={{ width: '100%', height: 100, paddingVertical : 5, paddingHorizontal : 10, backgroundColor: '#f9fbfa', alignItems: 'flex-start'}}>
 						<View style={{ paddingTop : 30, flexDirection : 'row' , flex : 1 }}>
@@ -144,68 +166,88 @@ class CustomDrawer extends Component {
 								<Text style={{ fontFamily: 'OpenSans-Regular', fontSize : 15, color : '#cacccb' }}>{'Rider ID #12345'}</Text>
 							</View>
 							<View style={{ flex : 0.1 }}>
-								<Icon name={'chevron-right'} size={28} color={'#00ccbb'}></Icon>
+								<Icon name={'chevron-right'} size={28} style={styles.defaultIconColor}></Icon>
 							</View>
 						</View>
 					</View> 
-					<View style={ { paddingHorizontal: 10 } }>
-						<View style={ { flexDirection : 'row', paddingVertical : 20 } }>
-							<View style={ { paddingHorizontal : 5 } }>
-								<Icon name={'home'} size={25} color={'#00ccbb'}></Icon>
+					<View style={ styles.drawerItemsView }>
+						<View style={ styles.drawerItemsView.items }>
+							<View style={ styles.drawerItemsView.view }>
+								<Icon name={'home'} size={25} style={styles.defaultIconColor}></Icon>
 							</View>
 							<TouchableOpacity onPress={ () => this.__go('Main') }>
-								<Text style={{ color : '#000', fontFamily : 'OpenSans-Regular', fontSize : 16 }}>
+								<Text style={ styles.drawerItemsView.items.text }>
 									{'Home'}
 								</Text>
 							</TouchableOpacity>
 						</View>
-						<View style={ { flexDirection : 'row', paddingVertical : 20 } }>
-							<View style={ { paddingHorizontal : 5 } }>
-								<Icon name={'shopping-bag'} size={25} color={'#00ccbb'}></Icon>
+						<View style={ styles.drawerItemsView.items }>
+							<View style={ styles.drawerItemsView.view }>
+								<Icon name={'shopping-bag'} size={25} style={styles.defaultIconColor}></Icon>
 							</View>
 							<TouchableOpacity onPress={ () => this.__go('OrderScreen') }>
-								<Text style={{ color : '#000', fontFamily : 'OpenSans-Regular', fontSize : 16 }}>
+								<Text style={ styles.drawerItemsView.items.text }>
 									{'Orders'}
 								</Text>
 							</TouchableOpacity>
 						</View>
-						<View style={ { flexDirection : 'row', paddingVertical : 20 } }>
-							<View style={ { paddingHorizontal : 5 } }>
-								<Icon name={'settings'} size={25} color={'#00ccbb'}></Icon>
+						<View style={ styles.drawerItemsView.items }>
+							<View style={ styles.drawerItemsView.view }>
+								<Icon name={'settings'} size={25} style={styles.defaultIconColor}></Icon>
 							</View>
 							<TouchableOpacity onPress={ () => this.__go('AccountDetailScreen') }>
-								<Text style={{ color : '#000', fontFamily : 'OpenSans-Regular', fontSize : 16 }}>
+								<Text style={ styles.drawerItemsView.items.text }>
 									{'Settings'}
 								</Text>
 							</TouchableOpacity>
 						</View>
-						<View style={ { flexDirection : 'row', paddingVertical : 20 } }>
-							<View style={ { paddingHorizontal : 5 } }>
-								<Icon name={'user'} size={25} color={'#00ccbb'}></Icon>
+						<View style={ styles.drawerItemsView.items }>
+							<View style={ styles.drawerItemsView.view }>
+								<Icon name={'user'} size={25} style={styles.defaultIconColor}></Icon>
 							</View>
 							<TouchableOpacity onPress={ () => this.__go('ProfileScreen') }>
-								<Text style={{ color : '#000', fontFamily : 'OpenSans-Regular', fontSize : 16 }}>
+								<Text style={ styles.drawerItemsView.items.text }>
 									{'Profile'}
 								</Text>
 							</TouchableOpacity>
 						</View>
-						<View style={ { flexDirection : 'row', paddingVertical : 20 } }>
-							<View style={ { paddingHorizontal : 5 } }>
+						<View style={ styles.drawerItemsView.items }>
+							<View style={ styles.drawerItemsView.view }>
 								<Icon name={'log-out'} size={25} color={'red'}></Icon>
 							</View>
-							<TouchableOpacity>
+							<TouchableOpacity onPress={ () => this.__logoutConfirm() }>
 								<Text style={{ color : 'red', fontFamily : 'OpenSans-Bold', fontSize : 16 }}>
 									{'Signout'}
 								</Text>
 							</TouchableOpacity>
 						</View>
 					</View>
+					<View style={ { paddingLeft : 10 } }>
+						<View style={ styles.drawerItemsView.otherMenus }>
+							<TouchableOpacity>
+								<Text style={ styles.drawerItemsView.items.text }>
+									{'Help'}
+								</Text>
+							</TouchableOpacity>
+						</View>
+						<View style={ styles.drawerItemsView.otherMenus }>
+							<TouchableOpacity>
+								<Text style={ styles.drawerItemsView.items.text }>
+									{'FAQs'}
+								</Text>
+							</TouchableOpacity>
+						</View>
+						<View style={ styles.drawerItemsView.otherMenus }>
+							<TouchableOpacity>
+								<Text style={ styles.drawerItemsView.items.text }>
+									{'Invite Friends'}
+								</Text>
+							</TouchableOpacity>
+						</View>
+					</View>
 				</ScrollView>
 				<View style={ { paddingHorizontal : 10, paddingVertical : 15 } }>
-					<Text style={{ fontFamily: 'OpenSans-Regular', fontSize : 14, color : '#cccecd' }}>{'Version 8.0'}</Text>
-					<TouchableOpacity>
-						<Text style={{ fontFamily: 'OpenSans-Regular', fontSize : 18, color : '#00ccbb' }}>{'Send Feedback'}</Text>
-					</TouchableOpacity>
+					<Text style={{ fontFamily: 'OpenSans-Regular', fontSize : 17, color : '#cccecd' }}>{'Version 1.0.0'}</Text>
 				</View>
 			</View>
         );
@@ -213,6 +255,7 @@ class CustomDrawer extends Component {
     
     
 }
+
 
 const App = createDrawerNavigator({
     Main: {

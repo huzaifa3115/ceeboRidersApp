@@ -22,7 +22,7 @@ export class ProfileScreen extends BaseScreen {
     render() {
         return (
             <View style={{ backgroundColor: '#FBF9FC', flex: 1 }}>
-                <View style={{ backgroundColor: '#00ccbb', height: 150, justifyContent: 'center', alignItems: 'flex-start', }}>
+                <View style={ [ styles.defaultBackgroundColor, { height: 150, justifyContent: 'center', alignItems: 'flex-start', }] }>
                     <View style={{ paddingLeft: 15 }}>
                         <View>
                             <TouchableOpacity>
@@ -38,35 +38,35 @@ export class ProfileScreen extends BaseScreen {
                     </View>
                 </View>
                 <View style={{ backgroundColor: '#fff', }}>
-                    <View style={{ paddingTop: 20, paddingHorizontal: 15 }}>
-                        <View style={{ alignItems: 'flex-start', borderBottomColor: 'grey', borderBottomWidth: 0.3, paddingVertical: 10 }}>
+                    <View style={ styles.profileScreenInfoView }>
+                        <View style={ styles.profileScreenInfoView.view }>
                             <View>
-                                <Text style={{ color: '#000', fontSize: 18 }} >{'Jamie Smith'}</Text>
+                                <Text style={  styles.profileScreenInfoView.view.heading } >{'Jamie Smith'}</Text>
                             </View>
                             <View style={{ marginTop: 5 }}>
-                                <Text style={{ color: '#cacccb', fontSize: 11 }} >{'jamiesmith@hotmail.co.uk'}</Text>
-                                <Text style={{ color: '#cacccb', fontSize: 11 }} >{'000 000 000 000'}</Text>
+                                <Text style={ styles.profileScreenInfoView.view.infoText } >{'jamiesmith@hotmail.co.uk'}</Text>
+                                <Text style={ styles.profileScreenInfoView.view.infoText } >{'000 000 000 000'}</Text>
                             </View>
                         </View>
                     </View>
                     <View style={{ paddingVertical: 10, paddingHorizontal: 15, }}>
-                        <Text style={{ color: '#00ccbb', fontSize: 13 }} >{'Edit details'}</Text>
+                        <Text style={  styles.profileScreenInfoView.view.btn } >{'Edit details'}</Text>
                     </View>
                 </View>
                 <View style={{ backgroundColor: '#fff', marginTop: 20 }}>
-                    <View style={{ paddingTop: 20, paddingHorizontal: 15 }}>
-                        <View style={{ alignItems: 'flex-start', borderBottomColor: 'grey', borderBottomWidth: 0.3, paddingVertical: 10 }}>
+                    <View style={ styles.profileScreenInfoView }>
+                        <View style={ styles.profileScreenInfoView.view }>
                             <View>
-                                <Text style={{ color: '#000', fontSize: 18 }} >{'Scooter'}</Text>
+                                <Text style={  styles.profileScreenInfoView.view.heading } >{'Scooter'}</Text>
                             </View>
                             <View style={{ marginTop: 5 }}>
-                                <Text style={{ color: '#cacccb', fontSize: 11 }} >{'RE12 3AA'}</Text>
-                                <Text style={{ color: '#cacccb', fontSize: 11 }} >{'Zego #1234567'}</Text>
+                                <Text style={ styles.profileScreenInfoView.view.infoText } >{'RE12 3AA'}</Text>
+                                <Text style={ styles.profileScreenInfoView.view.infoText } >{'Zego #1234567'}</Text>
                             </View>
                         </View>
                     </View>
                     <View style={{ paddingVertical: 10, paddingHorizontal: 15, }}>
-                        <Text style={{ color: '#00ccbb', fontSize: 13 }} >{'View vehicle details'}</Text>
+                        <Text style={  styles.profileScreenInfoView.view.btn } >{'View vehicle details'}</Text>
                     </View>
                 </View>
             </View>

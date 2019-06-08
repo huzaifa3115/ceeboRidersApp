@@ -6,11 +6,15 @@ module.exports = {
     defaultBoldText : {
         fontFamily: 'OpenSans-Regular',   
     },
-
     defaultTextColor : {
         color : '#fff'
     },
-
+    defaultBackgroundColor : {
+        backgroundColor : '#23BC7D'
+    },
+    defaultIconColor : {
+        color : '#23BC7D'
+    },
     loginFormView : {
         paddingHorizontal : 40,
         label : {
@@ -54,22 +58,109 @@ module.exports = {
         btn : {
             borderWidth : 2,
             height : 50,
-            backgroundColor : '#00ccbb'
+            backgroundColor : '#23BC7D'
         }
     },
     button : {
-        backgroundColor: '#00ccbb',
+        backgroundColor: '#23BC7D',
 		borderRadius: 25,
 		padding: 8,
 		alignItems: 'center',
 		justifyContent: 'center',
         minWidth: '80%',
         marginVertical : 10,
-        borderColor : '#00ccbb',
+        borderColor : '#23BC7D',
     },
 
-    menuItems : {
+    drawerItemsView : {
+        paddingHorizontal: 10, 
+        borderBottomWidth : 1, 
+        borderBottomColor : '#cccecd',
+        view :{
+            paddingHorizontal : 5
+        },
+        otherMenus : {
+            paddingVertical : 10 
+        },
+        items :{
+            flexDirection : 'row', 
+            paddingVertical : 20,
+            text : {
+                color : '#000', 
+                fontFamily : 'OpenSans-Regular', 
+                fontSize : 16 
+            }
+        }
+    },
+    loaderOverlay: {
+        flex : 1,
+        position : 'absolute',
+        left : 0,
+        top : 0,
+        opacity : 0.5,
+        backgroundColor : 'black',
+        width : viewportWidth,
+        height : '100%'
+    } ,
+
+    orderScreenCartHeadingView : {
+        paddingVertical : 15, 
+        paddingHorizontal : 15, 
+        borderBottomColor: '#f5f5f7', 
+        borderBottomWidth : 2,
+        text : {
+            color : '#000', 
+            fontSize : 15, 
+            fontFamily : 'OpenSans-Bold'
+        }
+    },
+    orderScreenCartView : {
         flexDirection : 'row', 
-        paddingVertical : 15
+        flex : 1, 
+        borderBottomColor: '#f5f5f7', 
+        borderBottomWidth : 1, 
+        paddingVertical :  15, 
+        paddingHorizontal :  15,
+        img : {
+            borderRadius : 50, 
+            width : 30, 
+            height : 30
+        },
+        view : {
+            flexDirection : 'row', 
+            flex : 0.5, 
+            alignItems  : 'flex-start',
+            text : {
+                color: 'grey', 
+                fontSize: 11
+            },
+            heading : {
+                color : '#000', 
+                fontSize : 13, 
+                fontFamily : 'OpenSans-Bold'
+            }
+        }
+    },
+    profileScreenInfoView : {
+        paddingTop: 20, 
+        paddingHorizontal: 15,
+        view : {
+            alignItems: 'flex-start', 
+            borderBottomColor: 'grey', 
+            borderBottomWidth: 0.3, 
+            paddingVertical: 10,
+            heading : {
+                color: '#000', 
+                fontSize: 18
+            },
+            infoText : {
+                color: '#cacccb', 
+                fontSize: 13
+            },
+            btn : {
+                color: '#23BC7D', 
+                fontSize: 13
+            }
+        }
     }
 };

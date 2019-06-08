@@ -1,199 +1,202 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:1:1-27:12
-INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:1:1-27:12
-INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:1:1-27:12
-INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:1:1-27:12
-MERGED from [:react-native-vector-icons] /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-gesture-handler] /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.59.8] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/0651e1b5746313b186116d44262008c8/AndroidManifest.xml:2:1-13:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/4ef57b380340f7a9eac5d2e6bbd6d074/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/56d5b236d71043b327bc893a34ad9d65/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/8328fcb1485b76a3592c247cdcb8ab89/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/2b3d3fd5ef8a6af7e091e68619cd5003/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/79c82aaeea3f69a622e18acb345ef53f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/e77cc4c59be1f19d831f0119c2b66184/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/cc7407cecb7aef97d6bc92a2ebdcee78/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/e1751451ac72267736f5bf0058ec4ea8/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/7fd2e8c67965b96a6e7a46bf19d041c5/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/e4eb8b9c38ec544984f7cd14e9cf6b35/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/90d27cc0235ce4857a12a1763ef76b84/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/ee8784fb2768b2fdd14ed93a9ea0ad50/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/24f5214d1fdcfe18b5a8fe6a146ba6cc/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/748fa14d56e9b9843749da1494df673e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/6b6e96b16de68519879443c259cff0fa/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/7709633fdde5f8b4dae405926f149950/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/9867405c19d4303f077cc4265e79e31e/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/a97de9f39e7952387f3af5502f13e520/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/91b612072eea3e7460d6524f0143eab1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/ba94fcb6402a60fcc2e0a8196df41dcb/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/299fcbf1080e9bc8d21b18aac1e1d2dc/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/df6411d2115e733be296a86f981652cb/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/f5eee024a97ab6c844d61ae84a978152/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/bdd255a5da2f615cdf9652124de43fdc/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/daea7d0616d840bb5789aa3f7b894a85/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/deb82dd6d4a97391a562c868347b6c6b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/b94c2b9726bc512f2e4b50e91a794058/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/52bb7253d76e55df53cd21a505fa2adb/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/92822bffbc77e0f92c66e2ed589f9d72/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/9c242e311f94571463cd16b13c48596c/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/d929703a1322155a1670d8fbf0bd306e/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/c12a58d94202a65333016ad1adcf554a/AndroidManifest.xml:2:1-13:12
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/b7fda0bea86d7038a56e91d6e2fea87a/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:1:1-27:12
-INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:1:1-27:12
-INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:1:1-27:12
+ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:1:1-27:12
+INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:1:1-27:12
+INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:1:1-27:12
+INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:1:1-27:12
+MERGED from [:@react-native-community_async-storage] E:\xampp\htdocs\react-native\ceeboRiders\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-vector-icons] E:\xampp\htdocs\react-native\ceeboRiders\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-gesture-handler] E:\xampp\htdocs\react-native\ceeboRiders\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.59.8] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\26d1b23474c3eabca3fcd6ec6219ae85\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\8368901624a2d6df33c9ae53eae69557\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\c36a9be4cb0012da3ecc25ed7f5df02c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\06dfb203b6f89f2c41e3103cd13a6f98\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\2de9749bfe259fa55086bcb17fa03fed\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\d331cf485a88c295fb06cc916d868cd9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\c63d45c4490c4de531802f3c05076dc4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\da272773588133e63a30dff907270fb7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\b6b4cdc0038636d1ec5d763fc019c803\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\92e6507d79fc9da713cb6365096a92ca\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\128e0c8a2001a5c4b9807d0291417a3d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\8a860dec76f62ebf08423cda5e052b50\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\984a435b01933ce30e806158bd1e60c6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\c83201e96c2e0e1994c0a621ad5b8e76\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\697bad805ce948d311fd74ed640b0a6d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\09dcb78d8c4d4060fb4733e7b52d93e2\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\b81381660482dd55c00ed13b27e0cceb\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\5a885ff467ffbb7c8e1f5a1b7d89d212\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\ea3355cd7dd17640753ef21ab9c6ef53\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\16f3b3329f2fc11d3eae82e27526cbbe\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\7742584f6105ee2cb84d67640bd96667\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\2c99667975dfff989b6f2c142f2d42cb\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\a0363f77d99b7e84f7838e2be74e0d47\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\53c54c06a78e79af84a37de42a1401dd\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\af46e5d61036fe63d14807e207d920a7\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\e994a0d5e7a73f4e8c9d2db21f85956e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\cf0456035f28e90a1eef43d7c50faa5e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\2e252df553000e0147c9634cfc02cfb5\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\c3a7c50f8e001a37354ebf34cd3d4aee\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\cfabb24a105a5782a3eff7575b2769de\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\3fe4e215fea1c49aed03710f3601ac3b\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\ea2ddc543f0bb96e267876fbb0477312\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\2216866d8fb62d055d01ee9ea8dd6a2c\AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\1ffa018b5a2a242001f4a2e02f452e64\AndroidManifest.xml:2:1-9:12
+INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:1:1-27:12
+INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:1:1-27:12
+INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:1:1-27:12
 	package
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:2:3-28
-		INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:2:3-28
+		INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:1:1-27:12
-		INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml
+		INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:1:1-27:12
+		INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:1:1-27:12
-		INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml
+		INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:1:1-27:12
+		INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:4:5-67
+ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:4:5-67
 	android:name
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:6:5-25:19
-MERGED from [com.facebook.react:react-native:0.59.8] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/0651e1b5746313b186116d44262008c8/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.59.8] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/0651e1b5746313b186116d44262008c8/AndroidManifest.xml:11:5-20
-MERGED from [com.android.support:support-compat:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/6b6e96b16de68519879443c259cff0fa/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/6b6e96b16de68519879443c259cff0fa/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/7709633fdde5f8b4dae405926f149950/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/7709633fdde5f8b4dae405926f149950/AndroidManifest.xml:22:5-23:19
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/c12a58d94202a65333016ad1adcf554a/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/c12a58d94202a65333016ad1adcf554a/AndroidManifest.xml:11:5-20
+ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:6:5-25:19
+MERGED from [com.facebook.react:react-native:0.59.8] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\26d1b23474c3eabca3fcd6ec6219ae85\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.59.8] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\26d1b23474c3eabca3fcd6ec6219ae85\AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\09dcb78d8c4d4060fb4733e7b52d93e2\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\09dcb78d8c4d4060fb4733e7b52d93e2\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\b81381660482dd55c00ed13b27e0cceb\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\b81381660482dd55c00ed13b27e0cceb\AndroidManifest.xml:22:5-23:19
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\2216866d8fb62d055d01ee9ea8dd6a2c\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\2216866d8fb62d055d01ee9ea8dd6a2c\AndroidManifest.xml:11:5-20
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/6b6e96b16de68519879443c259cff0fa/AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\09dcb78d8c4d4060fb4733e7b52d93e2\AndroidManifest.xml:22:18-91
 	android:label
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:8:7-39
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:8:7-39
 	android:roundIcon
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:10:7-52
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:10:7-52
 	android:icon
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:9:7-41
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:9:7-41
 	android:allowBackup
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:11:7-34
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:11:7-34
 	android:theme
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:13:7-38
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:13:7-38
 	android:usesCleartextTraffic
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:12:7-42
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:12:7-42
 	android:name
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:7:7-38
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:7:7-38
 activity#com.ceeboriders.MainActivity
-ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:14:7-23:18
+ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:14:7-23:18
 	android:label
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:16:9-41
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:16:9-41
 	android:windowSoftInputMode
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:18:9-51
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:18:9-51
 	android:configChanges
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:17:9-79
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:17:9-79
 	android:name
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:15:9-37
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:15:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:19:9-22:25
+ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:19:9-22:25
 action#android.intent.action.MAIN
-ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:20:13-65
+ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:20:13-65
 	android:name
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:20:21-62
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:20:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:21:13-73
+ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:21:13-73
 	android:name
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:21:23-70
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:21:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:24:7-84
+ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:24:7-84
 	android:name
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml:24:17-81
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml:24:17-81
 uses-sdk
-INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml
-MERGED from [:react-native-vector-icons] /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-gesture-handler] /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-gesture-handler] /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.59.8] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/0651e1b5746313b186116d44262008c8/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.59.8] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/0651e1b5746313b186116d44262008c8/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/4ef57b380340f7a9eac5d2e6bbd6d074/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/4ef57b380340f7a9eac5d2e6bbd6d074/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/56d5b236d71043b327bc893a34ad9d65/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/56d5b236d71043b327bc893a34ad9d65/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/8328fcb1485b76a3592c247cdcb8ab89/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/8328fcb1485b76a3592c247cdcb8ab89/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/2b3d3fd5ef8a6af7e091e68619cd5003/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/2b3d3fd5ef8a6af7e091e68619cd5003/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/79c82aaeea3f69a622e18acb345ef53f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/79c82aaeea3f69a622e18acb345ef53f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/e77cc4c59be1f19d831f0119c2b66184/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/e77cc4c59be1f19d831f0119c2b66184/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/cc7407cecb7aef97d6bc92a2ebdcee78/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/cc7407cecb7aef97d6bc92a2ebdcee78/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/e1751451ac72267736f5bf0058ec4ea8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/e1751451ac72267736f5bf0058ec4ea8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/7fd2e8c67965b96a6e7a46bf19d041c5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/7fd2e8c67965b96a6e7a46bf19d041c5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/e4eb8b9c38ec544984f7cd14e9cf6b35/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/e4eb8b9c38ec544984f7cd14e9cf6b35/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/90d27cc0235ce4857a12a1763ef76b84/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/90d27cc0235ce4857a12a1763ef76b84/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/ee8784fb2768b2fdd14ed93a9ea0ad50/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/ee8784fb2768b2fdd14ed93a9ea0ad50/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/24f5214d1fdcfe18b5a8fe6a146ba6cc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/24f5214d1fdcfe18b5a8fe6a146ba6cc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/748fa14d56e9b9843749da1494df673e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/748fa14d56e9b9843749da1494df673e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/6b6e96b16de68519879443c259cff0fa/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/6b6e96b16de68519879443c259cff0fa/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/7709633fdde5f8b4dae405926f149950/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/7709633fdde5f8b4dae405926f149950/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/9867405c19d4303f077cc4265e79e31e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/9867405c19d4303f077cc4265e79e31e/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/a97de9f39e7952387f3af5502f13e520/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/a97de9f39e7952387f3af5502f13e520/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/91b612072eea3e7460d6524f0143eab1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/91b612072eea3e7460d6524f0143eab1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/ba94fcb6402a60fcc2e0a8196df41dcb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/ba94fcb6402a60fcc2e0a8196df41dcb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/299fcbf1080e9bc8d21b18aac1e1d2dc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/299fcbf1080e9bc8d21b18aac1e1d2dc/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/df6411d2115e733be296a86f981652cb/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/df6411d2115e733be296a86f981652cb/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/f5eee024a97ab6c844d61ae84a978152/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/f5eee024a97ab6c844d61ae84a978152/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/bdd255a5da2f615cdf9652124de43fdc/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/bdd255a5da2f615cdf9652124de43fdc/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/daea7d0616d840bb5789aa3f7b894a85/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/daea7d0616d840bb5789aa3f7b894a85/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/deb82dd6d4a97391a562c868347b6c6b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/deb82dd6d4a97391a562c868347b6c6b/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/b94c2b9726bc512f2e4b50e91a794058/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/b94c2b9726bc512f2e4b50e91a794058/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/52bb7253d76e55df53cd21a505fa2adb/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/52bb7253d76e55df53cd21a505fa2adb/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/92822bffbc77e0f92c66e2ed589f9d72/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/92822bffbc77e0f92c66e2ed589f9d72/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/9c242e311f94571463cd16b13c48596c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/9c242e311f94571463cd16b13c48596c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/d929703a1322155a1670d8fbf0bd306e/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/d929703a1322155a1670d8fbf0bd306e/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/c12a58d94202a65333016ad1adcf554a/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/c12a58d94202a65333016ad1adcf554a/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/b7fda0bea86d7038a56e91d6e2fea87a/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/vitaliejalbu/.gradle/caches/transforms-2/files-2.1/b7fda0bea86d7038a56e91d6e2fea87a/AndroidManifest.xml:5:5-7:41
-INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml
+INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml
+INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml
+MERGED from [:@react-native-community_async-storage] E:\xampp\htdocs\react-native\ceeboRiders\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_async-storage] E:\xampp\htdocs\react-native\ceeboRiders\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] E:\xampp\htdocs\react-native\ceeboRiders\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] E:\xampp\htdocs\react-native\ceeboRiders\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] E:\xampp\htdocs\react-native\ceeboRiders\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] E:\xampp\htdocs\react-native\ceeboRiders\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.59.8] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\26d1b23474c3eabca3fcd6ec6219ae85\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.59.8] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\26d1b23474c3eabca3fcd6ec6219ae85\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\8368901624a2d6df33c9ae53eae69557\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\8368901624a2d6df33c9ae53eae69557\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\c36a9be4cb0012da3ecc25ed7f5df02c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\c36a9be4cb0012da3ecc25ed7f5df02c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\06dfb203b6f89f2c41e3103cd13a6f98\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\06dfb203b6f89f2c41e3103cd13a6f98\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\2de9749bfe259fa55086bcb17fa03fed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\2de9749bfe259fa55086bcb17fa03fed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\d331cf485a88c295fb06cc916d868cd9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\d331cf485a88c295fb06cc916d868cd9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\c63d45c4490c4de531802f3c05076dc4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\c63d45c4490c4de531802f3c05076dc4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\da272773588133e63a30dff907270fb7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\da272773588133e63a30dff907270fb7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\b6b4cdc0038636d1ec5d763fc019c803\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\b6b4cdc0038636d1ec5d763fc019c803\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\92e6507d79fc9da713cb6365096a92ca\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\92e6507d79fc9da713cb6365096a92ca\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\128e0c8a2001a5c4b9807d0291417a3d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\128e0c8a2001a5c4b9807d0291417a3d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\8a860dec76f62ebf08423cda5e052b50\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\8a860dec76f62ebf08423cda5e052b50\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\984a435b01933ce30e806158bd1e60c6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\984a435b01933ce30e806158bd1e60c6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\c83201e96c2e0e1994c0a621ad5b8e76\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\c83201e96c2e0e1994c0a621ad5b8e76\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\697bad805ce948d311fd74ed640b0a6d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\697bad805ce948d311fd74ed640b0a6d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\09dcb78d8c4d4060fb4733e7b52d93e2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\09dcb78d8c4d4060fb4733e7b52d93e2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\b81381660482dd55c00ed13b27e0cceb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\b81381660482dd55c00ed13b27e0cceb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\5a885ff467ffbb7c8e1f5a1b7d89d212\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\5a885ff467ffbb7c8e1f5a1b7d89d212\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\ea3355cd7dd17640753ef21ab9c6ef53\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\ea3355cd7dd17640753ef21ab9c6ef53\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\16f3b3329f2fc11d3eae82e27526cbbe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\16f3b3329f2fc11d3eae82e27526cbbe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\7742584f6105ee2cb84d67640bd96667\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\7742584f6105ee2cb84d67640bd96667\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\2c99667975dfff989b6f2c142f2d42cb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\2c99667975dfff989b6f2c142f2d42cb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\a0363f77d99b7e84f7838e2be74e0d47\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\a0363f77d99b7e84f7838e2be74e0d47\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\53c54c06a78e79af84a37de42a1401dd\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\53c54c06a78e79af84a37de42a1401dd\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\af46e5d61036fe63d14807e207d920a7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\af46e5d61036fe63d14807e207d920a7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\e994a0d5e7a73f4e8c9d2db21f85956e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\e994a0d5e7a73f4e8c9d2db21f85956e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\cf0456035f28e90a1eef43d7c50faa5e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\cf0456035f28e90a1eef43d7c50faa5e\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\2e252df553000e0147c9634cfc02cfb5\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\2e252df553000e0147c9634cfc02cfb5\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\c3a7c50f8e001a37354ebf34cd3d4aee\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\c3a7c50f8e001a37354ebf34cd3d4aee\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\cfabb24a105a5782a3eff7575b2769de\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\cfabb24a105a5782a3eff7575b2769de\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\3fe4e215fea1c49aed03710f3601ac3b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\3fe4e215fea1c49aed03710f3601ac3b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\ea2ddc543f0bb96e267876fbb0477312\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\ea2ddc543f0bb96e267876fbb0477312\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\2216866d8fb62d055d01ee9ea8dd6a2c\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\2216866d8fb62d055d01ee9ea8dd6a2c\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\1ffa018b5a2a242001f4a2e02f452e64\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\huzaifa poop\.gradle\caches\transforms-2\files-2.1\1ffa018b5a2a242001f4a2e02f452e64\AndroidManifest.xml:5:5-7:41
+INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml
+INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml
+		INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/vitaliejalbu/Documents/GitHub/ceeboRiders/android/app/src/main/AndroidManifest.xml
+		INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml
+		ADDED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\xampp\htdocs\react-native\ceeboRiders\android\app\src\main\AndroidManifest.xml

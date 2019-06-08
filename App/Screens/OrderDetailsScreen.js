@@ -23,7 +23,7 @@ export class OrderDetailsScreen extends BaseScreen {
     render() {
         return (
             <ScrollView style={{ backgroundColor: '#FBF9FC', flex: 1 }}>
-                <View style={{ backgroundColor: '#000', justifyContent: 'center', alignItems: 'flex-start', }}>
+                <View style={{ backgroundColor: '#23BC7D', justifyContent: 'center', alignItems: 'flex-start', }}>
                     <View style={{ paddingLeft: 15, paddingVertical: 8 }}>
                         <View>
                             <TouchableOpacity>
