@@ -1,11 +1,11 @@
 import React from 'react';
-import { View, Alert, Text, TouchableOpacity, TextInput } from 'react-native';
+import { View, Alert, Text, TouchableOpacity, TextInput, PermissionsAndroid } from 'react-native';
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 import Icon from "react-native-vector-icons/Feather";
 import { BaseScreen } from '../Screens/BaseScreen';
 import styles from './style';
 import { _ } from 'lodash';
-import { CTouchable, Header, Wrapper } from '../Components';
+import { CTouchable, Header, Wrapper,MenuIcon } from '../Components';
 import AsyncStorage from '@react-native-community/async-storage';
 
 
@@ -18,6 +18,19 @@ export class EarningsScreen extends BaseScreen {
             isloading: false
         }
         this.__checkAuth();
+        requestLocationPermission();
+        async function requestLocationPermission() {
+            try {
+              const granted = await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION);
+              if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+               // console.log('You can use the camera');
+              } else {
+                //console.log('Camera permission denied');
+              }
+            } catch (err) {
+              console.warn(err);
+            }
+          }
     }
 
     __checkAuth() {
@@ -42,18 +55,22 @@ export class EarningsScreen extends BaseScreen {
     }
 
 
-
     render() {
         if (this.state.isloading) {
             return (
                 <View style={{ backgroundColor: '#FBF9FC', flex: 1 }}>
-                    <View style={{ backgroundColor: '#23BC7D', height: 150, justifyContent: 'center', alignItems: 'flex-start', }}>
-                        <View style={{ paddingLeft: 15 }}>
-                            <View>
-                                <Text style={{ color: '#fff', fontSize: 30, fontFamily: 'OpenSans-Bold' }}>{'Earnings'}</Text>
-                            </View>
-                            <View>
-                                <Text style={{ color: '#fff', fontSize: 15 }}>{'13 Jan 2019'}</Text>
+                    <View style={{ backgroundColor: '#23BC7D', height: 150,}}>
+                        <View style={ { padding : 10 } }>
+                            <MenuIcon props={this.props} />
+                        </View>
+                        <View style={{ justifyContent: 'center', alignItems: 'flex-start', }}>
+                            <View style={{ paddingLeft: 15 }}>
+                                <View>
+                                    <Text style={{ color: '#fff', fontSize: 30, fontFamily: 'OpenSans-Bold' }}>{'Hello ' + global.userData.first_name }</Text>
+                                </View>
+                                <View>
+                                    <Text style={{ color: '#fff', fontSize: 15 }}>{'13 Jan 2019'}</Text>
+                                </View>
                             </View>
                         </View>
                     </View>
@@ -131,6 +148,7 @@ export class EarningsScreen extends BaseScreen {
                             </View>
                         </View>
                     </View>
+                   
                 </View>
             )
         }

@@ -15,27 +15,27 @@ export class OrderDetailsScreen extends BaseScreen {
     constructor(props) {
         super(props);
         this.state = {
-
+            orders : this.props.navigation.state.params.data
         }
     }
 
-
     render() {
+        
         return (
             <ScrollView style={{ backgroundColor: '#FBF9FC', flex: 1 }}>
                 <View style={{ backgroundColor: '#23BC7D', justifyContent: 'center', alignItems: 'flex-start', }}>
                     <View style={{ paddingLeft: 15, paddingVertical: 8 }}>
                         <View>
-                            <TouchableOpacity>
+                            <TouchableOpacity onPress={() => this.__back()}>
                                 <Icon name="x" color={'#fff'} size={20}></Icon>
                             </TouchableOpacity>
                         </View>
                         <View style={{ paddingTop: 30, paddingBottom: 10 }}>
                             <View>
-                                <Text style={{ color: '#fff', fontSize: 15 }}>{'June 04, 8:39pm'}</Text>
+                                <Text style={{ color: '#fff', fontSize: 15 }}>{this.state.orders.created_at + '  #' + this.state.orders.id}</Text>
                             </View>
                             <View>
-                                <Text style={{ color: '#fff', fontSize: 30, fontWeight: 'Bold' }}>{'Revenous Pig'}</Text>
+                                <Text style={{ color: '#fff', fontSize: 30, fontWeight: 'Bold' }}>{this.state.orders.cust_fname}</Text>
                             </View>
                         </View>
                     </View>

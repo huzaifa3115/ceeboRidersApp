@@ -162,5 +162,9 @@ module.exports = {
                 fontSize: 13
             }
         }
-    }
+    },
+    menuIconHeader : {
+        padding : 10
+    },
+    
 };

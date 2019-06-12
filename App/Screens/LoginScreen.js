@@ -7,7 +7,7 @@ import {Validator} from '../Utils/Validator';
 import styles from './style';
 import {_} from 'lodash';
 import {Guest} from '../Models/Guest';
-import {CTouchable,Header,Wrapper} from '../Components';
+import {CTouchable,Header,Wrapper,MenuIcon} from '../Components';
 import AsyncStorage from '@react-native-community/async-storage';
 
 
@@ -89,16 +89,38 @@ export class LoginScreen extends BaseScreen {
     }
 
 
+    __getFooter(){
+        return(
+            <View style={ {  paddingHorizontal : 40, paddingBottom : 30, flexDirection : 'row',backgroundColor: '#f5f5f7' } }>
+                <TouchableOpacity style={ { flex : 0.8, paddingTop : 10 } } onPress={ () => this.__go('ForgetPassword') }>
+                    <Text style={ { color : '#b0b0b0', fontSize : 17, fontFamily: 'OpenSans-Bold', } }>Forget Password</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={ {  flex : 0.2, backgroundColor : '#23BC7D',justifyContent : 'center', alignItems : 'center', height : 50, borderRadius : 50, } } onPress={ () => this.__back() }>
+                    <Icon name="arrow-right" color={ '#fff' } size={ 30 } ></Icon>
+                </TouchableOpacity>
+            </View>
+        )
+    }
+
 
     render() {
         const PageLoader = (props) => this.__loader();
+        const PageLoader1 = (props) => this.__getFooter();
 		return (
-           <View style={ { flex: 1, zIndex: 99, backgroundColor : '#fff' } }>
-               <View style={{ backgroundColor: '#ffffff', flex: 1 }}>
+           <Wrapper footer={this.state.loaded == false ? <PageLoader /> : <PageLoader1 />}>
+               <Header style={{ backgroundColor : '#23BC7D' }}>
+                    <View style={ styles.header.left }>
+                        <MenuIcon props={this.props} />
+                    </View>
+                    <View style={ styles.header.center }>
+                        <Text style={{ color : '#fff', fontSize : 18, fontFamily : 'OpenSans-Bold' }}>{'Sign In'}</Text>
+                    </View>
+                </Header>
+               <View style={{ marginTop : 40 }}>
                     <View style={ { flex : 0.5, justifyContent : 'space-between' } }>
-                        <View style={ { marginTop : 40, paddingHorizontal : 40, } }>
+                        {/* <View style={ { marginTop : 40, paddingHorizontal : 40, } }>
                             <Text style={ { color : '#191919', fontSize : 30, fontFamily: 'OpenSans-Bold',  } }>Sign In</Text>
-                        </View>
+                        </View> */}
                         <View style={ styles.loginFormView }>
                             <View>
                                 <View style={ [ styles.loginFormView.textField, { flexDirection : 'row' }] }>
@@ -126,18 +148,7 @@ export class LoginScreen extends BaseScreen {
                         </View>
                     </View>
 				</View>
-                <View style={ {  paddingHorizontal : 40, paddingBottom : 30, flexDirection : 'row' } }>
-                    <TouchableOpacity style={ { flex : 0.8, paddingTop : 10 } } onPress={ () => this.__go('ForgetPassword') }>
-                        <Text style={ { color : '#b0b0b0', fontSize : 17, fontFamily: 'OpenSans-Bold', } }>Forget Password</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={ {  flex : 0.2, backgroundColor : '#23BC7D',justifyContent : 'center', alignItems : 'center', height : 50, borderRadius : 50, } } onPress={ () => this.__back() }>
-                        <Icon name="arrow-right" color={ '#fff' } size={ 30 } ></Icon>
-                    </TouchableOpacity>
-                </View>
-                {
-                    this.state.loaded == false ? <PageLoader /> : null
-                }
-           </View>
+           </Wrapper>
         );
     }
 }

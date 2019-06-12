@@ -4,7 +4,7 @@ import {BaseScreen} from '../Screens/BaseScreen';
 import styles from './style';
 import {_} from 'lodash';
 import Icon from 'react-native-vector-icons/Feather';
-import {CTouchable,Header,Wrapper} from '../Components';
+import {CTouchable,Header,Wrapper,MenuIcon} from '../Components';
 import {Guest} from '../Models/Guest';
 
 export class ResetPasswordScreen extends BaseScreen {
@@ -33,36 +33,27 @@ export class ResetPasswordScreen extends BaseScreen {
         } )
     }
 
-
-    __pageFooter(){
+    __getFooter(){
         return(
-            <View style={ {  paddingHorizontal : 40, paddingBottom : 30, flexDirection : 'row' } }>
-                <TouchableOpacity style={ { flex : 0.8, paddingTop : 10 } } onPress={ () => this.__go('ForgetPassword') }>
-                    <Text style={ { color : '#b0b0b0', fontSize : 17, fontFamily: 'OpenSans-Bold', } }>Forget Password</Text>
-                </TouchableOpacity>
-                <View>
-                    <TouchableOpacity style={ {  flex : 0.2, backgroundColor : '#23BC7D',justifyContent : 'center', alignItems : 'center', height : 50, borderRadius : 50, } } onPress={ () => this.__back() }>
-                        <Icon name="arrow-right" color={ '#fff' } size={ 30 } ></Icon>
-                    </TouchableOpacity>
-                </View>
+            <View>
+                <MenuIcon props={this.props} />
             </View>
         )
     }
 
     render() {
         const PageLoader = (props) => this.__loader();
-
+        const PageLoader1 = (props) => this.__getFooter();
 		return (
-            <Wrapper footer={this.state.loaded == false ? <PageLoader /> : null}>
-                {/* header */}
-                <Header>
+            <Wrapper footer={this.state.loaded == false ? <PageLoader /> : <PageLoader1 />}>
+               <Header style={{ backgroundColor : '#23BC7D' }}>
                     <View style={ styles.header.left }>
-                        <CTouchable onPress={() => this.__back()} style={ { paddingLeft: 15, paddingTop : 30 } }>
-                            <Icon name={'arrow-left'} size={35} color={ '#000' } />
-                        </CTouchable>
+                        {/* <MenuIcon props={this.props} /> */}
+                    </View>
+                    <View style={ styles.header.center }>
+                        <Text style={{ color : '#fff', fontSize : 18, fontFamily : 'OpenSans-Bold' }}>{'Reset Password'}</Text>
                     </View>
                 </Header>
-                {/* header */}
                 <View style={ { flex : 0.5, justifyContent : 'space-between' } }>
                     <View style={ { marginTop : 40, paddingHorizontal : 40, } }>
                         <Text style={ { color : '#191919', fontSize : 30, fontFamily: 'OpenSans-Bold',  } }>{'Reset Password'}</Text>
@@ -81,7 +72,7 @@ export class ResetPasswordScreen extends BaseScreen {
                         </CTouchable>
                     </View>
                 </View>
-            </Wrapper>
+           </Wrapper>
         );
     }
 }

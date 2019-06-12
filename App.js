@@ -166,8 +166,11 @@ class CustomDrawer extends Component {
 								<Text style={{ fontFamily: 'OpenSans-Regular', fontSize : 15, color : '#cacccb' }}>{'Rider ID #12345'}</Text>
 							</View>
 							<View style={{ flex : 0.1 }}>
-								<Icon name={'chevron-right'} size={28} style={styles.defaultIconColor}></Icon>
+								<TouchableOpacity onPress={ () => this.props.navigation.closeDrawer() } >
+									<Icon name={'chevron-right'} size={28} style={styles.defaultIconColor}></Icon>
+								</TouchableOpacity>
 							</View>
+							
 						</View>
 					</View> 
 					<View style={ styles.drawerItemsView }>
