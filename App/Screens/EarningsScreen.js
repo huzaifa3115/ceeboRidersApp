@@ -15,22 +15,22 @@ export class EarningsScreen extends BaseScreen {
     constructor(props) {
         super(props);
         this.state = {
-            isloading: false
+            isloading: true
         }
-        this.__checkAuth();
-        requestLocationPermission();
-        async function requestLocationPermission() {
-            try {
-              const granted = await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION);
-              if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-               // console.log('You can use the camera');
-              } else {
-                //console.log('Camera permission denied');
-              }
-            } catch (err) {
-              console.warn(err);
-            }
-          }
+        // this.__checkAuth();
+        // requestLocationPermission();
+        // async function requestLocationPermission() {
+        //     try {
+        //       const granted = await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION);
+        //       if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+        //        // console.log('You can use the camera');
+        //       } else {
+        //         //console.log('Camera permission denied');
+        //       }
+        //     } catch (err) {
+        //       console.warn(err);
+        //     }
+        //   }
     }
 
     __checkAuth() {
@@ -92,10 +92,10 @@ export class EarningsScreen extends BaseScreen {
                                 <View style={{ paddingHorizontal: 10, flex: 0.5, paddingVertical: 10 }}>
                                     <View style={{ justifyContent: 'center', alignItems: 'center' }}>
                                         <View>
-                                            <Text style={{ color: '#23BC7D', fontSize: 40, fontWeight: 'Bold' }}>{'0'}</Text>
+                                            <Text style={[{ color: '#23BC7D', fontSize: 40 },styles.defaultHeading]}>{'0'}</Text>
                                         </View>
                                         <View>
-                                            <Text style={{ color: '#23BC7D', fontSize: 15, fontWeight: 'Bold' }}>{'Orders'}</Text>
+                                            <Text style={[{ color: '#23BC7D', fontSize: 15 },styles.defaultHeading]}>{'Orders'}</Text>
                                         </View>
                                     </View>
                                 </View>

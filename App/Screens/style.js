@@ -15,6 +15,9 @@ module.exports = {
     defaultIconColor : {
         color : '#23BC7D'
     },
+    defaultHeading : {
+        fontFamily: 'OpenSans-Bold',
+    },
     loginFormView : {
         paddingHorizontal : 40,
         label : {
@@ -166,5 +169,18 @@ module.exports = {
     menuIconHeader : {
         padding : 10
     },
+    homeCardContainer : {
+       // padding : 20,
+        card : {
+            backgroundColor : '#fff',
+            borderWidth : 1,
+            borderColor : '#f5f5f7',
+            padding : 20,
+            item : {
+                flexDirection : 'row'
+            }
+        }
+        
+    }
     
 };

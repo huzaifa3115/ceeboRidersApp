@@ -20,6 +20,7 @@ import { ProfileScreen } from './App/Screens/ProfileScreen';
 import { AccountDetailScreen } from './App/Screens/AccountDetailScreen';
 import { OrderScreen } from './App/Screens/OrderScreen';
 import { EarningsScreen } from './App/Screens/EarningsScreen';
+import { HomeScreen } from './App/Screens/HomeScreen';
 import styles from './App/Screens/style';
 
 // importing screens
@@ -44,7 +45,7 @@ global.isUserLoggedIn = false;
 
 const MainNavigator = createStackNavigator({
 	Main: {
-		screen: EarningsScreen,
+		screen: HomeScreen,
 		headerMode: 'float',
 		navigationOptions: {
 			header: null
@@ -181,6 +182,16 @@ class CustomDrawer extends Component {
 							<TouchableOpacity onPress={ () => this.__go('Main') }>
 								<Text style={ styles.drawerItemsView.items.text }>
 									{'Home'}
+								</Text>
+							</TouchableOpacity>
+						</View>
+						<View style={ styles.drawerItemsView.items }>
+							<View style={ styles.drawerItemsView.view }>
+								<Icon name={'home'} size={25} style={styles.defaultIconColor}></Icon>
+							</View>
+							<TouchableOpacity onPress={ () => this.__go('Earning') }>
+								<Text style={ styles.drawerItemsView.items.text }>
+									{'Earnings'}
 								</Text>
 							</TouchableOpacity>
 						</View>

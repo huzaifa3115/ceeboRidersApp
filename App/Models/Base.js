@@ -6,19 +6,19 @@
 
 
 class Base {
-	
+
 	static request(url, type, params, headers) {
 		return new Promise(
-            function (resolve, reject) {
-                let requestParams = {};
+			function (resolve, reject) {
+				let requestParams = {};
 
 				requestParams.method = type || 'GET';
 				requestParams.headers = headers || {};
-				if(requestParams.method !== 'GET') {
+				if (requestParams.method !== 'GET') {
 					requestParams.body = JSON.stringify(params) || '{}';
 				}
 				requestParams.headers['Cache-Control'] = 'no-cache';
-				requestParams.headers["Content-Type"]  = "application/json";
+				requestParams.headers["Content-Type"] = "application/json";
 				console.log(url);
 				console.log(requestParams);
 				console.log(params);
@@ -28,11 +28,11 @@ class Base {
 				}).then((responseJson) => {
 					console.log(responseJson);
 					resolve(responseJson);
-			    }).catch((error) => {
+				}).catch((error) => {
 					reject(error);
-			    });
-            }
-        );
+				});
+			}
+		);
 	}
 
 	static getAuthToken() {

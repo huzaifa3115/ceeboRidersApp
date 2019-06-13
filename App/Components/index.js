@@ -42,7 +42,7 @@ export class MenuIcon extends React.Component {
 		let props = this.props.props;
 		return (
 			<TouchableOpacity activeOpacity={0.5} onPress={() => props.navigation.openDrawer()}  >
-				<Icon color={'#fff'} name="menu" size={25} />
+				<Icon color={this.props.color ? 'grey' : '#fff'} name="menu" size={25} />
 			</TouchableOpacity>
 		);
 	}
